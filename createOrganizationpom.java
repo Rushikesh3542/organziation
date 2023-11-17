@@ -72,6 +72,12 @@ final WebDriver d;
 		con.getNametf().sendKeys(OrgName+jutils.getRandomNumber());
 		
 		
+		driver.findElement(By.id("title")).sendkeys("TEJAS");
+		driver.findElement(By.id("Department")).sendkeys("Qspider");
+		driver.findElement(By.id("email")).sendkeys("TEJAS@123gmail.com");
+		driver.findElement(By.name("Assistance phone")).sendkeys("111222333");
+		
+		
 		con.getAssignedtotf().click();
 		wutils.handledropdown(con.getAssignedtobtn(),ASSIGNED);
 		
